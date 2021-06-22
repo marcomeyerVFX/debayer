@@ -91,7 +91,7 @@ class Debayer():
         # Config Options
 
         # Get locations of executables
-        for exe, location in self.config.get('executable_locations').iteritems():
+        for exe, location in self.config.get('executable_locations').items():
             if exe == "rawtherapee_cli":
                 if exe.startswith(os.path.sep):
                     self.rawtherapee_cli = location
